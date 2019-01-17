@@ -168,6 +168,25 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+header .nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .nav-bar nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
