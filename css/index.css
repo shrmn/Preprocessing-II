@@ -269,9 +269,9 @@ img {
   height: 4rem;
   background-color: #17A2B8;
   color: #FFFFFF;
-  border-radius: 20%;
+  border-radius: 10px;
   cursor: pointer;
-  margin: 20px 0;
+  margin: 1rem 0;
   font-size: 1.6rem;
 }
 .home .content-pick .destination .btn:hover {
