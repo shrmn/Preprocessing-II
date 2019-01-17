@@ -9,7 +9,7 @@
     .custom-layout(row, space-between);
     margin: 0 auto;
     padding: 2rem 0 2.5rem;
-    width: 800px;
+    max-width: 800px;
 
   nav {
     .custom-layout(row, space-around);
@@ -24,13 +24,14 @@
     }
   }
 
-    img {
-      
-    }
-
     .about-us {
       .custom-layout(column, space-evenly);
       margin: 1.5rem 0;
+    }
+    
+    @media @mobile {
+      .custom-layout(column, center);
+      align-items: center;
     }
   }
 }
