@@ -175,17 +175,34 @@ header {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  border-bottom: 1px solid #C0C0C0;
 }
 header .nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 2rem 0;
 }
 header .nav-bar nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 50%;
+  align-items: center;
+  width: 42%;
+}
+header .nav-bar nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+header img {
+  margin: 1rem 0;
+}
+header .about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1.5rem 0;
 }
 .footer {
   width: 100%;

@@ -5,14 +5,32 @@ header {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  .bordered();
 
   .nav-bar {
     .custom-layout(row, space-between);
+    margin: 2rem 0;
 
     nav {
       .custom-layout(row, space-evenly);
-      width: 50%;
+      align-items: center;
+      width: 42%;
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+      }
     }
+  }
+
+  img {
+    margin: 1rem 0;
+  }
+
+  .about-us {
+    .custom-layout(column, space-evenly);
+    margin: 1.5rem 0;
   }
 
 }
