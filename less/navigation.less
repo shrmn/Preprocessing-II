@@ -1,36 +1,36 @@
 // Navigation Styles here
 
-header {
-  .custom-layout(column, space-evenly);
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  .bordered();
+.nav-bar {
+  // .custom-layout(row, space-between);
+  // padding: 2rem 0;
+  .bordered;
 
-  .nav-bar {
+  .nav-container {
     .custom-layout(row, space-between);
-    margin: 2rem 0;
+    margin: 0 auto;
+    padding: 2rem 0 2.5rem;
+    width: 800px;
 
-    nav {
-      .custom-layout(row, space-evenly);
-      align-items: center;
-      width: 42%;
+  nav {
+    .custom-layout(row, space-around);
+    align-items: center;
+    padding-right: 1rem;
+    width: 42%;
 
-      a {
-        text-decoration: none;
-        color: black;
-        font-size: 1.5rem;
-      }
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.6rem;
     }
   }
 
-  img {
-    margin: 1rem 0;
-  }
+    img {
+      
+    }
 
-  .about-us {
-    .custom-layout(column, space-evenly);
-    margin: 1.5rem 0;
+    .about-us {
+      .custom-layout(column, space-evenly);
+      margin: 1.5rem 0;
+    }
   }
-
 }

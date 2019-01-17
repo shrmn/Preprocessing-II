@@ -168,37 +168,31 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  border-bottom: 1px solid #C0C0C0;
+.nav-bar {
+  border-bottom: 2px dashed #C0C0C0;
 }
-header .nav-bar {
+.nav-bar .nav-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 2rem 0;
+  margin: 0 auto;
+  padding: 2rem 0 2.5rem;
+  width: 800px;
 }
-header .nav-bar nav {
+.nav-bar .nav-container nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  padding-right: 1rem;
   width: 42%;
 }
-header .nav-bar nav a {
+.nav-bar .nav-container nav a {
   text-decoration: none;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
-header img {
-  margin: 1rem 0;
-}
-header .about-us {
+.nav-bar .nav-container .about-us {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -214,6 +208,12 @@ header .about-us {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home header {
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home header .about-us {
+  padding: 2rem 0;
 }
 .home .content-section {
   margin: 30px 0;
@@ -260,4 +260,22 @@ header .about-us {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 4rem;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  border-radius: 20%;
+  cursor: pointer;
+  margin: 20px 0;
+  font-size: 1.6rem;
+}
+.home .content-pick .destination .btn:hover {
+  border: 2px solid #17A2B8;
+  background-color: #FFFFFF;
+  color: #17A2B8;
 }
