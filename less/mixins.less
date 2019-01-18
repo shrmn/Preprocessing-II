@@ -1,1 +1,59 @@
 // Mixins in here
+
+.custom-layout(@direction, @justify) {
+	display: flex;
+	flex-direction: @direction;
+  justify-content: @justify;
+}
+
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bordered() {
+	border-bottom: 2px dashed @silver;
+}
+
+.custom-btn(@background: @eastern-blue, @color: @white) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 20rem;
+  height: 4rem;
+  background-color: @background;
+  color: @color;
+  border-radius: 10px;  
+  outline: 0;
+  overflow:hidden;
+  z-index: 1;
+  cursor: pointer;
+  margin: 1rem 0;
+  transition: 0.2s ease-in;
+  
+  &:hover {
+    border: 2px solid @eastern-blue;
+    background-color: @white;
+    color: @eastern-blue;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    background: @white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    -webkit-transition: top 0.2s ease-in;
+  }
+
+  &:hover:before {
+    top: 0;
+  }
+}
+
+@mobile: ~"(max-width: 500px)";

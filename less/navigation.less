@@ -1,1 +1,42 @@
 // Navigation Styles here
+
+.nav-bar {
+  // .custom-layout(row, space-between);
+  // padding: 2rem 0;
+  .bordered;
+
+  .nav-container {
+    .custom-layout(row, space-between);
+    margin: 0 auto;
+    padding: 2rem 0 2.5rem;
+    max-width: 800px;
+
+  nav {
+    .custom-layout(row, space-around);
+    align-items: center;
+    padding-right: 1rem;
+    width: 42%;
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.6rem;
+    }
+  }
+
+    .about-us {
+      .custom-layout(column, space-evenly);
+      margin: 1.5rem 0;
+    }
+    
+    @media @mobile {
+      .custom-layout(column, center);
+      align-items: center;
+
+      nav {
+        .custom-layout(row, space-evenly);
+        width: 100%;
+      }
+    }
+  }
+}
